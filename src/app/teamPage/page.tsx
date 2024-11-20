@@ -33,7 +33,7 @@ const TeamPage = () => {
   return (
     <>
       <Header />
-      <div className="min-h-screen bg-gray-100 py-10 px-6 my-2">
+      <div className="min-h-screen bg-gray-100 py-10 px-6 ">
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">
           Nossa Equipe
         </h1>
@@ -57,7 +57,7 @@ const TeamPage = () => {
           <p>
             Agradecemos imensamente os ensinamentos do nosso professor Arary, que
             nos ensinou a refletir criticamente sobre a Filosofia e
-            ensionou sobre os conceitos da filosofia científica.
+            ensionou sobre os conceitos da filosofia científica. Desta forma, estudar filosofia nos fez perceber que o verdadeiro aprendizado não está em respostas prontas, mas em questionar os moldes. No exemplo de Procusto, com seu leito inflexível, nos ensina o que não devemos ser. Ele nos desafia a criar espaços onde as diferenças sejam celebradas, não eliminadas. Em um mundo repleto de leitos de ferro – sejam eles sociais, políticos ou culturais – cabe a cada um de nós resistir aceitar a compreensão de que verdadeiro aprendizado da filosofia está em desconstruir os leitos, rejeitar os moldes e aceitar a riqueza infinita daquilo que é humano. Que jamais nos esqueçamos disso.
           </p>
         </div>
       </div>
