@@ -2,7 +2,14 @@
 
 import { useState } from "react";
 
-const topics = [
+type Topic = {
+  id: number;
+  title: string;
+  shortDescription: string;
+  details: string;
+};
+
+const topics: Topic[] = [
   {
     id: 1,
     title: "O Mito da Caverna de Platão",
@@ -28,9 +35,9 @@ const topics = [
 ];
 
 export default function Home() {
-  const [activeTopic, setActiveTopic] = useState(null);
+  const [activeTopic, setActiveTopic] = useState<number | null>(null);
 
-  const toggleTopic = (id) => {
+  const toggleTopic = (id: number): void => {
     setActiveTopic((prev) => (prev === id ? null : id));
   };
 
