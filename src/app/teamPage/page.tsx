@@ -18,13 +18,13 @@ const teamMembers = [
     description: "Estudante de Ciência da Computação.",
   },
   {
-    name: "Thallys Asafe Ribeiro Alcantara",
-    photo: "/images/thallys.png", 
+    name: "Rayane Quézia Lima Duarte",
+    photo: "/images/rayane.png", 
     description: "Estudante de Ciência da Computação.",
   },
   {
-    name: "Rayane Quézia Lima Duarte",
-    photo: "/images/rayane.png", 
+    name: "Thallys Asafe Ribeiro de Alcantara",
+    photo: "/images/thallys.png", 
     description: "Estudante de Ciência da Computação.",
   },
 ];
