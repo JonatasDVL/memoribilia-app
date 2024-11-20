@@ -48,38 +48,40 @@ export default function Home() {
     <>
       <Header />
       <div className="min-h-screen bg-gray-100 flex flex-col items-center py-10">
-        <h1 className="text-4xl font-bold mb-6 text-gray-800">
-          Memorabilia de Filosofia
-        </h1>
-        <div className="w-full max-w-4xl space-y-4">
-          {topics.map((topic) => (
-            <div
-              key={topic.id}
-              className="bg-white shadow-md rounded-lg p-4 transition hover:shadow-lg"
-            >
-              <button
-                onClick={() => toggleTopic(topic.id)}
-                className="w-full text-left"
+        <div className="mx-4">
+          <h1 className="text-center text-4xl font-bold mb-6 text-gray-800">
+            Memorabilia de Filosofia
+          </h1>
+          <div className="w-full max-w-4xl space-y-4">
+            {topics.map((topic) => (
+              <div
+                key={topic.id}
+                className="bg-white shadow-md rounded-lg p-4 transition hover:shadow-lg"
               >
-                <h2 className="text-2xl font-semibold text-gray-700">
-                  {topic.title}
-                </h2>
-                <p className="text-gray-500 mt-1">
-                  {topic.shortDescription}
-                </p>
-                {activeTopic !== topic.id && (
-                  <p className="text-gray-400 mt-2 text-xs font-light">
-                    Clique aqui, para saber mais
+                <button
+                  onClick={() => toggleTopic(topic.id)}
+                  className="w-full text-left"
+                >
+                  <h2 className="text-2xl font-semibold text-gray-700">
+                    {topic.title}
+                  </h2>
+                  <p className="text-gray-500 mt-1">
+                    {topic.shortDescription}
                   </p>
+                  {activeTopic !== topic.id && (
+                    <p className="text-gray-400 mt-2 text-xs font-light">
+                      Clique aqui, para saber mais
+                    </p>
+                  )}
+                </button>
+                {activeTopic === topic.id && (
+                  <div className="mt-4 text-gray-600 border-t pt-4">
+                    <p>{topic.details}</p>
+                  </div>
                 )}
-              </button>
-              {activeTopic === topic.id && (
-                <div className="mt-4 text-gray-600 border-t pt-4">
-                  <p>{topic.details}</p>
-                </div>
-              )}
-            </div>
-          ))}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       <Footer />

@@ -33,7 +33,7 @@ const TeamPage = () => {
   return (
     <>
       <Header />
-      <div className="min-h-screen bg-gray-100 py-10 px-6 ">
+      <div className="min-h-screen bg-gray-100 py-10 px-6 my-2">
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">
           Nossa Equipe
         </h1>
